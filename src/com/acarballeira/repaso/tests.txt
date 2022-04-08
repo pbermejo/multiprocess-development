@@ -1,0 +1,106 @@
+# ¿Cuál es el cometido principal del BCP?
+Que al reanudarse un proceso debe hacerse en el mismo estado en que se encontraba cuando se suspendió. El BCP almacena el estado del proceso y su información asociada.
+
+# Un programa concurrente
+es indeterminista
+
+# ¿Qué es la sección critica?
+Es la porción de código de un programa en la que se accede a un recurso compartido que no puede ser accedido por más de un proceso o hilo al mismo tiempo.
+
+# ¿Cuáles son las diferencias entre programación concurrente, paralela y distribuida?
+Concurrente -> Ocurre cuando existen dos o más procesos simultáneos tanto en arquitecturas monoprocesador como multiprocesador.
+Paralela -> Es un caso específico de programación concurrente que se da en los sistemas multiprocesador. En estos sistemas todos los procesadores trabajan con una memoria común.
+Distribuida ->Es un caso específico de programación paralela, que se da en sistemas multiprocesador distribuidos. En estos sistemas cada procesador tiene acceso a su propia memoria local.
+
+# ¿Cuáles son los problemas inherentes a la programación concurrente?
+Exclusión mutua, condición de sincronización, interbloqueo e inanición.
+
+# ¿De qué elementos dispone un proceso para su ejecución?
+Todas son ciertas
+
+# En nuestro contexto podemos definir a un programa como algo ...
+Estatico
+
+# ¿Cuáles son las características de un programa concurrente?
+Orden parcial de ejecución e indeterminismo
+
+# La concurrencia ...
+determina la existencia de estrategias de comunicación y sincronización entre procesos/programas
+
+# Indica la opción cierta ...
+un programa puede estar ejecutándose varias veces en procesos distintos
+
+# ¿Cuál de los siguientes suele ser un problema importante en la programación concurrente?
+Condición de carrera
+
+# ¿Qué mecanismo de sincronización disponemos para garantizar la exclusión mutua, siendo muy simple, pero que puede generar problemas de acaparamiento de la CPU si la región crítica es amplia?
+Inhibición de interrupciones
+
+# ¿Se puede matar el proceso explorer en windows?
+Si
+
+# ¿Cuál es una de las formas o modos de ejecución de un proceso?
+Todas: Interactiva, background y batch
+
+# ¿Qué mecanismo de sincronización permite una gestión del acceso a las secciones críticas de mayor nivel de abstracción?
+Monitores
+
+# Qué comando en windows nos permite visualizar los procesos en ejecución?
+Tasklist
+
+# ¿Cuándo tiene lugar un cambio de contexto?
+Cuando un proceso cambia de estado
+
+# Las instrucciones wait y signal, suelen estar asociados a ...
+Semáforos
+
+# ¿Qué parte del sistema operativo se encarga de gestionar los procesos?
+Scheduler
+
+# ¿Qué paquete debemos instalar en Linux Debian/Ubuntu para disponer del comando pstree?
+psmisc
+
+# ¿Cuál de los siguientes es un algoritmo de planificación también llamado FIFO?
+FCFS
+
+# ¿Qué comando ejecutaremos en Linux para poder visualizar los procesos activos con un refresco en tiempo real?
+top
+
+# ¿Qué atajo empleamos para acceder al administrador de tareas de windows directamente?
+Ctrl + Shift + Esc
+
+# ¿Cómo puedo obtener detalles del proceso cuyo PID es 9308 en windows mediante línea de comandos?
+Todas son ciertas. Ej tasklist /FI "PID eq 9308"
+
+# En el contexto de planificación de procesos, ¿qué es el quántum?
+un tiempo que se le otorga a cada proceso para ejecutarse
+
+# ¿Cuál de los siguientes estados de un proceso es anterior al de su ejecución?
+Listo
+
+# ¿Qué tipo de aplicaciones se suelen utilizar en programación distribuída?
+Sistemas comerciales tipo cliente/servidor, sistemas gestores bases de datos, ...
+
+# ¿Qué mecanismo de sincronización suele echar mano, a bajo nivel, de una instrucción hardware para ayudar en su buen funcionamiento?
+Cerrojo
+
+# PPID, sería ...
+Todas falsas
+
+# ¿En qué tipo de planificación el sistema operativo le puede retirar la CPU a un proceso?
+Planificación apropiativa
+
+# ¿Cuál es el concepto mediante el que se determina qué proceso ocupa la CPU en cada momento?
+Algoritmo de planificación
+
+# ¿Cuál es el algoritmo de planificación que ofrece menos rendimiento?
+FCFS
+
+# En Windows, ¿Cuál es el proceso que ejecuta el servicio spooler?
+spoolsv.exe
+
+# Investiga sobre OpenMosix e indica el tipo de procesamiento que permite llevar a cabo.
+Open Mosix es un sistema distribuido que actúa como un único procesador, engañando a los procesos. Éstos no saben en qué nodo del clúster se ejecutan. El tipo de procesamiento que permiten es el multiprocesamiento.
+
+# En Windows, indica el comando o comandos necesarios para matar un proceso de bloc de notas que está abierto
+taskkill /IM "notepad.exe" /F

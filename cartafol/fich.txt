@@ -1,0 +1,7 @@
+Listado de rutas de carpetas
+El n£mero de serie del volumen es 59BD-D197
+C:.
+    fich.txt
+    
+No existe ninguna subcarpeta 
+

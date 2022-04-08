@@ -1,0 +1,22 @@
+Ctrl+Alt+Del
+Ctrl+Alt+Esc
+Windows+R > taskmgr.exe
+
+tasklist # Lista procesos
+tasklist /F "status eq suspended" # Filtra procesos suspendidos"
+
+# Matar procesos
+tkill <PID>
+taskkill /im "nombreproceso.exe"
+taskkill /pid <PID>
+
+# Iniciar tarea
+start "notepad.exe"
+start/high notepad # indicando prioridad
+
+# Procesos arranque
+Win+R > msconfig > arranque
+
+# Servicios
+Win+R > servies.msc
+net start # Servicios en ejecución
